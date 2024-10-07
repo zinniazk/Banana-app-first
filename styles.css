@@ -1,0 +1,22 @@
+.header{
+    --primary-color:#FFDB58;
+    background-color: var(--primary-color);
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
+.textbox{
+width: 200px;
+border-color: grey;
+height: 200px;
+
+}
+
+.container{
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+}
+
