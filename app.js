@@ -7,7 +7,7 @@ var outputtxt   = document.querySelector("#output");
 var serverURL  = "https://api.funtranslations.com/translate/minion.json";
 
 function getTranslationURL(input){
-    return serverURL+ "?" + "text" +input;
+    return serverURL+ "?" + "text=" +input;
 }
 
 
@@ -19,8 +19,8 @@ function minionClick() {
         .then(response => response.json())
         .then(json => {
             var translatedtext = json.contents.translated;
-            outputDiv.innerText = translatedtext;
+            outputtxt.innerText = translatedtext;
         })
-    // outputtxt.innerText = "Minion Language  " + txtinput.value;
+    // outputtxt.innerText = "Minion Language " + txtinput.value;
     };
 buttonclick.addEventListener("click", minionClick);
